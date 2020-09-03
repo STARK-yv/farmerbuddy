@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<body background= "images\base.jpg">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Float four columns side by side */
+.column {
+  float: left;
+  width: 25%;
+  padding: 0 5px;
+}
+
+
+
+
+.row {margin: 0 -5px;}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive columns */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 10px;
+  }
+}
+
+/* Style the counter cards */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  text-align: center;
+  background-color: #444;
+  color: white;
+}
+
+.fa {font-size:50px;}
+
+
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+body {
+
+         background-repeat: no-repeat;
+         background-attachment: fixed;
+         background-position: center;
+         background-size: cover;
+}
+
+
+
+
+
+
+
+/* Create two equal columns that floats next to each other */
+.columns {
+  float: left;
+  width: 25%;
+  padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.rows:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+
+
+
+
+
+
+
+
+/* The sidebar menu */
+.sidenav {
+  height: 74%; /* Full-height: remove this if you want "auto" height */
+  width: 160px; /* Set the width of the sidebar */
+  position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+  z-index: 1; /* Stay on top */
+  top: 1; /* Stay at the top */
+  left: 0;
+  background-color: #C0C0C0; /* Black */
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 20px;
+}
+
+/* The navigation menu links */
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+/* Style page content */
+.main {
+  margin-left: 160px; /* Same as the width of the sidebar */
+  padding: 0px 10px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+
+
+
+
+
+
+
+
+
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #e9e9e9;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #2196F3;
+  color: white;
+}
+
+.topnav .search-container {
+  float: right;
+}
+
+.topnav input[type=text] {
+  padding: 6px;
+  margin-top: 8px;
+  font-size: 17px;
+  border: none;
+}
+
+.topnav .search-container button {
+  float: right;
+  padding: 6px 10px;
+  margin-top: 8px;
+  margin-right: 16px;
+  background: #ddd;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+}
+
+.topnav .search-container button:hover {
+  background: #ccc;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav .search-container {
+    float: none;
+  }
+  .topnav a, .topnav input[type=text], .topnav .search-container button {
+    float: none;
+    display: block;
+    text-align: left;
+    width: 100%;
+    margin: 0;
+    padding: 14px;
+  }
+  .topnav input[type=text] {
+    border: 1px solid #ccc;  
+  }
+}
+</style>
+</head>
+<body>
+<div class="topnav">
+  <a class="active" href="#home">Home</a>
+  <a href="aboutus.html">About</a>
+  <a href="contact.html">Contact Us</a>
+  <a href="login page.html">Login</a>
+  <a href="available options.html">Clients</a>
+  <a href="news.html">The News</a>
+  <div class="search-container">
+    <form action="/action_page.php">
+      <input type="text" placeholder="Search.." name="search">
+      <button type="submit"><i class="fa fa-search"></i></button>
+    </form>
+  </div>
+</div>
+<div style="padding-left:16px">
+</div>
+<h2><a href="available options.html"><u><img src="images\map.png" class="center" width="0" height="600" align="right" ></u></a></h2>
+
+<!-- Side navigation -->
+<div class="sidenav">
+<h1><font color="white">CHOOSE YOUR CITY HERE</font></h1>
+  <a href="amritsar.html">Amritsar</a>
+  <a href="jalandhar.html">Jalandhar</a>
+  <a href="ludhiana.html">Ludhiana</a>
+<a href="patiala.html">Patiala</a>
+</div>
+<div align="center">
+<iframe width="430" height="300"
+src="https://www.youtube.com/embed/hAd7EPiL3f0">
+</iframe>
+</div>
+<div align="center">
+<iframe width="430" height="300"
+src="https://www.youtube.com/embed/qHIKRwYe3Cs">
+</iframe>
+</div>
+<!-- Page content -->
+<div class="main">
+</div>
+<h2><a href="news.html"><img src="images\news.jpg" class="center" width="1920" height="200" align="center"></u></a></h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="rows">
+  <div class="columns">
+  </div>
+  <div class="columns">
+<iframe src="https://www.livemint.com/industry/agriculture/india-sugar-output-may-slide-to-3-year-low-after-flooding-11572957069391.html" style="width:200%; height:200%;"></iframe>
+  </div>
+  <div class="columns">
+  </div>
+</div>
+<div class="rows">
+  <div class="columns">
+  </div>
+  <div class="columns">
+  </div>
+  <div class="columns">
+  </div>
+</div>
+<div class="rows">
+  <div class="columns">
+  </div>
+  <div class="columns">
+ <blockquote class="twitter-tweet"><p lang="hi" dir="ltr">?????? ??????? ?? ????? ?? ??? ??? ??? ???? ???????? ?? ????? ??? ????? ?????? ?????? <a href="https://twitter.com/hashtag/IndiaFightsCorona?src=hash&amp;ref_src=twsrc%5Etfw">#IndiaFightsCorona</a> <a href="https://t.co/qblqqJaFc8">pic.twitter.com/qblqqJaFc8</a></p>&mdash; Radha Mohan Singh (@RadhamohanBJP) <a href="https://twitter.com/RadhamohanBJP/status/1248126266026258433?ref_src=twsrc%5Etfw">April 9, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+  </div>
+  <div class="columns">
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Union Agriculture Minister <a href="https://twitter.com/nstomar?ref_src=twsrc%5Etfw">@nstomar</a> chairs meeting with State Agriculture Ministers to review relief steps for farmers.<br><br> Read more: <a href="https://t.co/c2owMUhW8I">https://t.co/c2owMUhW8I</a></p>&mdash; Alpana Pant Sharma (@PIBAgriculture) <a href="https://twitter.com/PIBAgriculture/status/1248122541874479104?ref_src=twsrc%5Etfw">April 9, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+  </div>
+</div>
+<br><br><br><br><br><br><br>
+<div class="rows">
+  <div class="columns">
+  </div>
+  <div class="columns">
+<iframe src="https://www.livemint.com/industry/agriculture/onion-price-rise-temporary-phase-govt-boosting-supply-ram-vilas-paswan-1568732059118.html" style="width:200%; height:200%;"></iframe>
+  </div>
+  <div class="columns">
+  </div>
+</div>
+<div class="rows">
+  <div class="columns">
+  </div>
+  <div class="columns">
+  </div>
+  <div class="columns">
+  </div>
+</div>
+<div class="rows">
+  <div class="columns">
+  </div>
+  <div class="columns">
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Excellent gesture! <br><br>Kudos to the artists for coming together for this. <br><br>It would be a treat to listen. <a href="https://t.co/buxBrNZ4Sz">https://t.co/buxBrNZ4Sz</a></p>&mdash; Narendra Modi (@narendramodi) <a href="https://twitter.com/narendramodi/status/1248223073511206912?ref_src=twsrc%5Etfw">April 9, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+  </div>
+  <div class="columns">
+<blockquote class="twitter-tweet"><p lang="hi" dir="ltr">?????????? ?? ??? ??????? ?? ?????????? ?? ?? ???? ???? ???? ???... <a href="https://t.co/lVqx6wgI9o">https://t.co/lVqx6wgI9o</a></p>&mdash; Narendra Modi (@narendramodi) <a href="https://twitter.com/narendramodi/status/1248222869416341504?ref_src=twsrc%5Etfw">April 9, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+  </div>
+</div>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<br><br><br><br><br><br><br><br>
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <p><i class="fa fa-user"></i></p>
+      <h3>11+</h3>
+      <p>Partners</p>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <p><i class="fa fa-check"></i></p>
+      <h3>55+</h3>
+      <p>Projects</p>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <p><i class="fa fa-smile-o"></i></p>
+      <h3>100+</h3>
+      <p>Happy Clients</p>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <p><i class="fa fa-coffee"></i></p>
+      <h3>100+</h3>
+      <p>Meetings</p>
+    </div>
+  </div>
+</div>
+</body>
+</html>

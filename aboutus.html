@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+<head>
+<body background= "images\aa.jpg">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+
+/* Add a black background color to the top navigation */
+.topnav {
+  background-color: #333;
+  overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Add an active class to highlight the current page */
+.topnav a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+  display: none;
+}
+
+
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 25%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+.card {
+  box-shadow: 0 9px 8px 0 rgba(0, 7, 0, 5);
+  margin: 9px;
+}
+
+.about-section {
+  padding: 50px;
+  text-align: center;
+  background-color: #474e5d;
+  color: white;
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: white;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+</style>
+</head>
+<body>
+<!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<div class="topnav" id="myTopnav">
+  <a href="main page.html" class="active">Back to Home</a>
+  <a href="news.html">News</a>
+  <a href="contact.html">Contact</a>
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+<div class="about-section">
+  <h1>About Us</h1>
+  <p>We aim at disseminating useful information about improved technology to the farming community and service providers in the rural areas. The major focus of Agriculture sector presently in the in this portal, is pertaining to Agricultural Credit, Policies & Schemes, Agricultural Bank loans, Market Information, Agricultural Best Practices, On & Off Farm Enterprises and various Products & Services.
+Agriculture is a way of life, a tradition, which, for centuries, has shaped the thought, the outlook, the culture and economic life of the people of India. The advent of modern technologies at the beginning of the last century has brought in development of various technologies, which has substantially increased the yields of various crops.
+Farmers Buddy is playing an important and vital role in agricultural production and marketing. This system allows farmers to save time on order and delivery and getting feedback. In the existing competition, there is a need to rapidly attract new customers as well as retain existing customers.
+</p>
+</div>
+
+<h2 style="text-align:center">Our Team</h2>
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <img src="images/yash.jpg" alt="Jane" style="width:100%">
+      <div class="container">
+        <h2>Yash Verma</h2>
+        <p class="title">CEO & Co-Founder</p>
+<br>
+        <a href="https://www.instagram.com/yash_0405/"><p><button class="button">Contact</button></p></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img src="images/logo.jpg" alt="John" style="width:100%">
+      <div class="container">
+        <h2>Member 1</h2>
+        <p class="title">Head Designer, Creator & Co-Founder</p>
+<br>
+        <a href="https://www.instagram.com/yash_0405/"><p><button class="button">Contact</button></p></a>
+      </div>
+    </div>
+  </div>
+
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <img src="images/logo.jpg" alt="Jane" style="width:100%">
+      <div class="container">
+        <h2>Member 2</h2>
+        <p class="title">Head Provider, Co-Creator & Co-Founder</p>
+<br><br>
+        <a href="https://www.instagram.com/yash_0405/"><p><button class="button">Contact</button></p></a>
+      </div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="card">
+      <img src="images/logo.jpg" alt="Mike" style="width:100%">
+      <div class="container">
+        <h2>Member 3</h2>
+        <p class="title">Project Distributior & Co-Founder</p>
+<br><br><br>
+        <a href="https://www.instagram.com/yash_0405/"><p><button class="button">Contact</button></p></a>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

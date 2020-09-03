@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+/* Add a black background color to the top navigation */
+.topnav {
+  background-color: #333;
+  overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Add an active class to highlight the current page */
+.topnav a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+  display: none;
+}
+* {
+  box-sizing:border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+  padding: 64px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both
+}
+
+.column-66 {
+  float: left;
+  width: 66.66666%;
+  padding: 20px;
+}
+
+.column-33 {
+  float: left;
+  width: 33.33333%;
+  padding: 20px;
+}
+
+.large-font {
+  font-size: 48px;
+}
+
+.xlarge-font {
+  font-size: 64px
+}
+
+.button {
+  border: none;
+  color: white;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #4CAF50;
+}
+
+img {
+  display: block;
+  height: auto;
+  max-width: 100%;
+}
+
+@media screen and (max-width: 1000px) {
+  .column-66,
+  .column-33 {
+    width: 100%;
+    text-align: center;
+  }
+  img {
+    margin: auto;
+  }
+}
+</style>
+</head>
+<body>
+<!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<div class="topnav" id="myTopnav">
+  <a href="main page.html" class="active">Back to Home</a>
+  <a href="login page.html">Sign In</a>
+  <a href="contact.html">Contact</a>
+  <a href="aboutus.html">About</a>
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+<div style="text-align:center">
+  <h2>The News Section</h2>
+  <p>Scroll Down.</p>
+</div>
+
+<!-- Section One -->
+<div class="container">
+  <div class="row">
+    <div class="column-66">
+      <h1 class="xlarge-font"><b>Bharat Sarkar</b></h1>
+      <h1 class="large-font" style="color:MediumSeaGreen;"><b>Learn About Latest News!</b></h1>
+      <p><span style="font-size:36px">Learn all about Farmers.</span>Click down below</p>
+      <a href="https://doordarshan.gov.in/ddkisan"><button class="button">Reach The Website</button></a>
+    </div>
+    <div class="column-33">
+        <img src="images/qxs.jpg" width="335" height="471">
+    </div>
+  </div>
+</div>
+
+<!-- Clarity Section -->
+<div class="container" style="background-color:#f1f1f1">
+  <div class="row">
+    <div class="column-33">
+      <img src="images/xoxo.jpg" alt="App" width="335" height="471">
+    </div>
+    <div class="column-66">
+      <h1 class="xlarge-font"><b>Successful Farming?</b></h1>
+      <h1 class="large-font" style="color:red;"><b>How to do it?</b></h1>
+      <p><span style="font-size:24px">Here is how to find out.</span> Find the latest ag news, including updates on farm policy, business, machinery, and technology. This section also covers crop news for corn, soybeans, and wheat as well as livestock updates on cattle, hogs, and poultry.</p>
+      <a href="https://www.agriculture.com/news"><button class="button">Reach The Website</button></a>
+    </div>
+  </div>
+</div>
+
+<!-- The App Section -->
+<div class="container">
+  <div class="row">
+    <div class="column-66">
+      <h1 class="xlarge-font"><b>The Agriculture</b></h1>
+      <h1 class="large-font" style="color:MediumSeaGreen;"><b>The Economic Times</b></h1>
+      <p><span style="font-size:36px">Want to know? </span> In a letter to the additional chief secretaries, principal secretaries and commissioners(Health) of all states and UTs, the Health Ministry said the 100 per cent centrally funded package will be implemented in three phases . The death toll due to novel coronavirus rose to 166 and the number of cases climbed to 5,734 in the country on Thursday.</p>
+      <a href="https://economictimes.indiatimes.com/news/economy/agriculture"><button class="button">Reach The Website</button></a>
+    </div>
+    <div class="column-33">
+        <img src="images/xxoo.jpg" width="335" height="471" >
+    </div>
+  </div>
+</div>
+</body>
+</html>

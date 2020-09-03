@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+
+/* Add a black background color to the top navigation */
+.topnav {
+  background-color: #354;
+  overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Add an active class to highlight the current page */
+.topnav a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+  display: none;
+}
+
+
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 25%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+}
+
+.about-section {
+  padding: 50px;
+  text-align: center;
+  background-color: #411e5d;
+  color: white;
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+</style>
+</head>
+<body>
+<!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<div class="topnav" id="myTopnav">
+  <a href="main page.html" class="active">Back to Home</a>
+  <a href="news.html">News</a>
+  <a href="contact.html">Contact</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+<div class="about-section">
+  <h1>OUR CLIENTS</h1>
+  <p>Reach our clients here</p>
+</div>
+
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <img src="images\amritsar.jpg" alt="Jane" style="width:100%">
+      <div class="container">
+        <h2>AMRITSAR</h2>
+        <a href="amritsar1.html"><p><button class="button">REACH THEM</button></p></a>
+      </div>
+    </div>
+  </div>
+
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <img src="images\jalandhar.jpg" alt="Jane" style="width:100%">
+      <div class="container">
+        <h2>JALANDHAR</h2>
+<br>
+        <a href="jalandhar1.html"><p><button class="button">REACH THEM</button></p></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img src="images\map.jpg" alt="Mike" style="width:100%">
+      <div class="container">
+        <h2>LUDHIANA</h2>
+<br><br><br><br><br><br><br><br>
+        <a href="ludhiana1.html"><p><button class="button">REACH THEM</button></p></a>
+      </div>
+    </div>
+  </div>
+    <div class="column">
+    <div class="card">
+      <img src="images\patiala.jpg" alt="Mike" style="width:100%">
+      <div class="container">
+        <h2>PATIALA</h2>
+        <a href="patiala1.html"><p><button class="button">REACH THEM</button></p></a>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>
